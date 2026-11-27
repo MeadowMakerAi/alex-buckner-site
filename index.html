@@ -57,6 +57,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 @keyframes open{from{clip-path:inset(49% 0 49% 0)}}
 }
 </style>
+<link rel="stylesheet" href="process.css">
+<meta property="og:image" content="https://raw.githubusercontent.com/MeadowMakerAi/alex-buckner-site/5cb89fbb70b354f0ed1d31b11ddab73fe7e5b4e9/assets/meadow-maker-peach-proof.webp">
 </head>
 <body>
 <div style="font-family: 'Geist', system-ui, sans-serif; font-size: 17px; line-height: 1.5; color: #000; background: #fff">
@@ -71,33 +73,36 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 </nav>
 </header>
 
-<section class="wrap" style="padding-top: clamp(28px, 5vw, 72px); padding-bottom: 40px; display: flex; flex-direction: column; gap: 32px">
-<h1 class="wide" style="font-size: clamp(34px, 4.7vw, 66px)">I build <a href="#products" class="u" data-pick="0" style="background-image: linear-gradient(#D6223A, #D6223A); background-size: 100% .2em">products</a>, the <a href="#factory" class="u" data-pick="1" style="background-image: linear-gradient(#E8590C, #E8590C); background-size: 100% .11em; animation-delay: .12s">factory</a> that makes them, the <a href="#ai" class="u" data-pick="2" style="background-image: linear-gradient(#1F5EFF, #1F5EFF); background-size: 100% .11em; animation-delay: .24s">AI</a> that runs the business, and the <a href="#film" class="u" data-pick="3" style="background-image: linear-gradient(#000, #000); background-size: 100% .11em; animation-delay: .36s">film</a> that tells the story.</h1>
-<div style="display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="font-size: clamp(18px, 1.5vw, 21px); max-width: 600px; color: #2B2B31">Founder and operator in Brooklyn, New York. I work in regulated consumer products (cannabis and hemp), where the product, the paperwork and the production all have to be right.</p>
-<div class="row" style="gap: 12px">
-<a href="#work" class="btn">See the work</a>
-<a href="about.html" class="btn" style="background: #fff; color: #000">Read my story</a>
-</div>
-</div>
-<div style="flex: 1.4 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
-<div class="ap" style="position: relative; aspect-ratio: 16 / 10; border: 1.5px solid #000; border-radius: 2px; overflow: hidden; background: #F4F4F6">
-<div class="shot pouch-proof" data-shot="0" style="opacity: 1"><img src="assets/meadow-maker-peach-proof.webp" width="850" height="403" fetchpriority="high" alt="Meadow Maker Peach pouch artwork, with a black-and-white crowd photograph and an orange flavor strip."></div>
-<div class="shot" data-shot="1" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #E8590C">02</p><p class="mono"><span class="tag">To render</span>Slow camera move through the 3D factory model</p></div>
-<div class="shot" data-shot="2" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #1F5EFF">03</p><p class="mono"><span class="tag">To record</span>FM Command screen capture, demo data</p></div>
-<div class="shot" data-shot="3" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #000">04</p><p class="mono"><span class="tag">To shoot</span>Your hands on a lens ring, close</p></div>
-</div>
-<div class="mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px"><span data-cap-num>01 / 04</span><span data-cap-name style="color: #000; font-weight: 600">Products</span><span>4 second loop</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 22px">
-<button type="button" class="tab" data-pick="0" aria-pressed="true" style="border-bottom-color: #000"><span class="key" style="background: #D6223A" aria-hidden="true"></span>Products</button>
-<button type="button" class="tab" data-pick="1" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #E8590C" aria-hidden="true"></span>Factory</button>
-<button type="button" class="tab" data-pick="2" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #1F5EFF" aria-hidden="true"></span>AI</button>
-<button type="button" class="tab" data-pick="3" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #000" aria-hidden="true"></span>Film</button>
-</div>
-</div>
-</div>
+<section id="studio" class="wrap opening" aria-labelledby="opening-title">
+  <div class="opening-copy">
+    <p class="studio-key mono">Meadow Maker / Product study</p>
+    <h1 class="wide" id="opening-title">From film<br>to pouch.</h1>
+    <p class="opening-lead">I work on both sides of the pouch. I make the artwork on the outside and plan how the gummies inside get made.</p>
+    <a class="study-link" href="one-product-start-to-finish.html">Read the product case study</a>
+  </div>
+  <figure class="process" aria-label="Meadow Maker process studies">
+    <div class="process-head" hidden>
+      <button type="button" data-track="art" aria-pressed="true">The packaging</button>
+      <button type="button" data-track="gummy" aria-pressed="false">The gummy</button>
+    </div>
+    <div class="screen">
+      <img id="poster" src="assets/meadow-maker-peach-proof.webp" width="850" height="403" alt="Original Meadow Maker Peach pouch artwork with a crowd photograph, black wordmark and orange flavor strip.">
+      <canvas id="process-screen" width="800" height="480" hidden aria-hidden="true"></canvas>
+    </div>
+    <figcaption><strong id="scene-name">Peach pouch artwork</strong><span id="scene-note">Detail from my original packaging layout.</span></figcaption>
+    <div class="transport" hidden>
+      <button type="button" id="play-study">Play</button>
+      <label class="sr-only" for="scene-position">Study position</label>
+      <input id="scene-position" type="range" min="0" max="1000" value="0">
+      <button type="button" id="back-study" aria-label="Previous stage">←</button>
+      <button type="button" id="next-study" aria-label="Next stage">→</button>
+    </div>
+  </figure>
 </section>
+<div class="wrap work-strip">
+  <p>I’m a founder and operator in Brooklyn. My work spans regulated consumer products, including cannabis and hemp.</p>
+  <nav aria-label="Explore my work"><a href="#products">Products</a><a href="#factory">Factory</a><a href="#ai">AI systems</a><a href="#film">Photo and film</a></nav>
+</div>
 
 <section class="wrap" style="padding-bottom: 56px">
 <div class="row" style="gap: 20px 32px; border-top: 1.5px solid #000; padding-top: 18px">
@@ -291,6 +296,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 </footer>
 
 </div>
-<script src="hero.js" defer></script>
+<script src="process.js" defer></script>
 </body>
 </html>
