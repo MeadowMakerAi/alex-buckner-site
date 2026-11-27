@@ -2,295 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alex Buckner</title>
-<meta name="description" content="Founder-operator in Brooklyn. Products, the factory that makes them, the AI that runs the business, and the film that tells the story.">
-<meta property="og:title" content="Alex Buckner">
-<meta property="og:description" content="Founder-operator in Brooklyn. Products, the factory that makes them, the AI that runs the business, and the film that tells the story.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
-<style>
-@view-transition{navigation:auto}
-body{margin:0}
-p{margin:0}
-a{color:#000}a:hover{color:#1F5EFF}
-a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3px}
-.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
-.wide{font-family:'Archivo',system-ui,sans-serif;font-stretch:125%;font-weight:700;letter-spacing:-0.02em;line-height:1.08;margin:0;text-wrap:balance}
-.h3{font-family:'Archivo',system-ui,sans-serif;margin:0;font-size:21px;font-weight:700;font-stretch:112%;line-height:1.2}
-.sub{color:#45454D;font-size:16px}
-.mono{font-family:'Geist Mono',ui-monospace,monospace;font-size:13px;line-height:1.45;color:#45454D}
-.row{display:flex;flex-wrap:wrap;gap:32px 24px}
-.item{min-width:0;display:flex;flex-direction:column;gap:10px}
-.shot.pouch-proof{padding:0;justify-content:center;background:#fff}
-.pouch-proof img{display:block;width:100%;height:100%;object-fit:contain}
-.product-art{margin:0;position:relative;overflow:hidden;aspect-ratio:4 / 5;border:1.5px solid #000;border-radius:2px;background:#fff;display:flex;flex-direction:column}
-.product-art-copy{min-height:0;flex:1;width:100%;object-fit:cover;object-position:50% 48%;display:block}
-.product-art figcaption{padding:13px 16px;border-top:1px solid #C9C9CF}
-.product-art figcaption img{display:block;width:min(48%,135px);height:auto}
-.g4{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:32px 24px}
-.g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px 24px}
-.frame{box-sizing:border-box;border:1.5px solid #000;border-radius:2px;background:#F4F4F6;display:flex;align-items:flex-end;padding:12px}
-.slot{box-sizing:border-box;border:1.5px dashed #85858F;border-radius:2px;display:flex;align-items:center;padding:14px;min-height:60px}
-.tag{font-family:'Geist',system-ui,sans-serif;background:#FFD60A;color:#000;font-weight:600;font-size:12px;padding:3px 8px;border-radius:4px;margin-right:8px;white-space:nowrap}
-.nav{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:500}
-.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:10px;background:#000;color:#fff;font-weight:600;text-decoration:none;border:2px solid #000;transition:transform .12s ease-out}
-.btn:hover{color:#fff;background:#1F5EFF;border-color:#1F5EFF}
-.btn:active{transform:scale(.97)}
-.u{text-decoration:none;background-repeat:no-repeat;background-position:0 100%;padding-bottom:.05em;transition:background-size .24s cubic-bezier(.23,1,.32,1)}
-.shot{position:absolute;inset:0;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(14px,2.2vw,26px);background:#F4F4F6;transition:opacity .3s ease}
-.tab{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;background:none;border:0;border-bottom:3px solid transparent;font:inherit;font-size:15px;font-weight:500;color:#000;cursor:pointer}
-.key{flex:none;width:12px;height:12px;border-radius:2px}
-.layer{display:flex;flex-wrap:wrap;gap:20px 48px;border-top:1px solid #C9C9CF;padding-top:22px;margin-top:10px}
-.lhead{flex:1 1 240px;min-width:0;display:flex;flex-direction:column;gap:8px}
-.lbody{flex:2.4 1 420px;min-width:0}
-.g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:28px 24px}
-.kv{display:flex;flex-wrap:wrap;gap:2px 16px;padding:9px 14px;border-top:1px solid #C9C9CF}
-.k{flex:0 0 100px}
-.chip{font-family:'Geist Mono',ui-monospace,monospace;font-size:13px;color:#000;border:1px solid #000;border-radius:2px;padding:4px 10px}
-.chap{border-top:1.5px solid #000;padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline;font-size:clamp(26px,3.2vw,40px)}
-@media (prefers-reduced-motion:no-preference){
-.u{animation:draw .4s cubic-bezier(.23,1,.32,1) backwards}
-.ap{animation:open .8s cubic-bezier(.23,1,.32,1) .3s backwards}
-@keyframes draw{from{background-size:0% .11em}}
-@keyframes open{from{clip-path:inset(49% 0 49% 0)}}
-}
-</style>
-</head>
-<body>
-<div style="font-family: 'Geist', system-ui, sans-serif; font-size: 17px; line-height: 1.5; color: #000; background: #fff">
-
-<header class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 18px; padding-bottom: 18px">
-<a href="index.html" class="nav" style="font-family: 'Archivo', system-ui, sans-serif; font-stretch: 125%; font-weight: 700; font-size: 19px">Alex Buckner</a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 26px">
-<a href="#work" class="nav">Work</a>
-<a href="fm-command.html" class="nav">FM Command</a>
-<a href="about.html" class="nav">About</a>
-<a href="#contact" class="btn">Get in touch</a>
-</nav>
-</header>
-
-<section class="wrap" style="padding-top: clamp(28px, 5vw, 72px); padding-bottom: 40px; display: flex; flex-direction: column; gap: 32px">
-<h1 class="wide" style="font-size: clamp(34px, 4.7vw, 66px)">I build <a href="#products" class="u" data-pick="0" style="background-image: linear-gradient(#D6223A, #D6223A); background-size: 100% .2em">products</a>, the <a href="#factory" class="u" data-pick="1" style="background-image: linear-gradient(#E8590C, #E8590C); background-size: 100% .11em; animation-delay: .12s">factory</a> that makes them, the <a href="#ai" class="u" data-pick="2" style="background-image: linear-gradient(#1F5EFF, #1F5EFF); background-size: 100% .11em; animation-delay: .24s">AI</a> that runs the business, and the <a href="#film" class="u" data-pick="3" style="background-image: linear-gradient(#000, #000); background-size: 100% .11em; animation-delay: .36s">film</a> that tells the story.</h1>
-<div style="display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="font-size: clamp(18px, 1.5vw, 21px); max-width: 600px; color: #2B2B31">Founder and operator in Brooklyn, New York. I work in regulated consumer products (cannabis and hemp), where the product, the paperwork and the production all have to be right.</p>
-<div class="row" style="gap: 12px">
-<a href="#work" class="btn">See the work</a>
-<a href="about.html" class="btn" style="background: #fff; color: #000">Read my story</a>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Alex Buckner — Selected work</title>
+<meta name="description" content="Alex Buckner is a Brooklyn-based founder and operator. Selected work in photography, brand design, manufacturing, robotics and AI.">
+<meta property="og:title" content="Alex Buckner — Selected work">
+<meta property="og:description" content="Alex Buckner is a Brooklyn-based founder and operator. Selected work in photography, brand design, manufacturing, robotics and AI.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/MeadowMakerAi/alex-buckner-site/chatgpt/personal-portfolio/assets/alex-buckner-portfolio.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#faf9f6">
+<link rel="stylesheet" href="portfolio.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="nav frame"><a class="signature" href="index.html">Alex Buckner</a>
+<nav aria-label="Main"><a href="index.html#work">Work</a><a href="photographs.html">Images</a><a href="about.html">Profile</a><a href="#contact">Contact</a></nav></header>
+<main id="main" tabindex="-1" class="frame">
+<h1 class="nameplate">Alex Buckner</h1>
+<div class="leadline">
+<p>I’m a founder and operator. I design consumer brands, model production lines and build software with AI. Photography runs through my work.</p>
+<p class="location">Brooklyn, New York</p></div>
+<div class="feature">
+<a class="tile portrait" href="photographs.html">
+<div class="window"><img class="" src="assets/photo-pickup.webp" alt="A green pickup parked under a canopy of pink blossoms."></div>
+<div class="caption"><strong>The image edit</strong><span class="tag">Meadow Maker archive</span></div></a>
+<a class="tile wide" href="robotics.html">
+<div class="window"><img class="" src="assets/engineering-robot.webp" alt="A white tending arm reaches across the machine bed in a dark 3D model."></div>
+<div class="caption"><strong>The cylinder line</strong><span class="tag">Robotics study</span></div></a>
 </div>
-</div>
-<div style="flex: 1.4 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
-<div class="ap" style="position: relative; aspect-ratio: 16 / 10; border: 1.5px solid #000; border-radius: 2px; overflow: hidden; background: #F4F4F6">
-<div class="shot pouch-proof" data-shot="0" style="opacity: 1"><img src="assets/meadow-maker-peach-proof.webp" width="850" height="403" fetchpriority="high" alt="Meadow Maker Peach pouch artwork, with a black-and-white crowd photograph and an orange flavor strip."></div>
-<div class="shot" data-shot="1" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #E8590C">02</p><p class="mono"><span class="tag">To render</span>Slow camera move through the 3D factory model</p></div>
-<div class="shot" data-shot="2" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #1F5EFF">03</p><p class="mono"><span class="tag">To record</span>FM Command screen capture, demo data</p></div>
-<div class="shot" data-shot="3" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #000">04</p><p class="mono"><span class="tag">To shoot</span>Your hands on a lens ring, close</p></div>
-</div>
-<div class="mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px"><span data-cap-num>01 / 04</span><span data-cap-name style="color: #000; font-weight: 600">Products</span><span>4 second loop</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 22px">
-<button type="button" class="tab" data-pick="0" aria-pressed="true" style="border-bottom-color: #000"><span class="key" style="background: #D6223A" aria-hidden="true"></span>Products</button>
-<button type="button" class="tab" data-pick="1" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #E8590C" aria-hidden="true"></span>Factory</button>
-<button type="button" class="tab" data-pick="2" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #1F5EFF" aria-hidden="true"></span>AI</button>
-<button type="button" class="tab" data-pick="3" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #000" aria-hidden="true"></span>Film</button>
-</div>
-</div>
-</div>
-</section>
-
-<section class="wrap" style="padding-bottom: 56px">
-<div class="row" style="gap: 20px 32px; border-top: 1.5px solid #000; padding-top: 18px">
-<p style="flex: 1 1 240px; font-weight: 500">Built a hemp manufacturing company to seven-figure revenue with my partner.</p>
-<p style="flex: 1 1 240px; font-weight: 500">Designed and made dozens of products for larger brands.</p>
-<p style="flex: 1 1 240px; font-weight: 500">Built a working AI operating system for my businesses, without an engineering team.</p>
-</div>
-</section>
-
-<section style="background: #F4F4F6">
-<div class="wrap" style="padding-top: 64px; padding-bottom: 64px; display: flex; flex-direction: column; gap: 22px">
-<p class="mono">What I'm building now</p>
-<p class="wide" style="font-size: clamp(22px, 2.7vw, 36px); line-height: 1.2; max-width: 980px; font-stretch: 112%">AI has shrunk the team a business needs. A small company can now run most of its own supply chain, from raw inputs to delivery, if its systems are wired into one.</p>
-<p style="max-width: 680px; color: #2B2B31">I'm building that kind of company in New York: three brands, a production facility designed in 3D before construction, and one system that runs all of it. The same idea applies to food, farming, housing, and any business that makes a physical thing.</p>
-</div>
-</section>
-
-<div id="work">
-
-<section id="products" class="wrap" style="padding-top: 72px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 22px">
-<div class="chap"><p class="wide" style="font-size: inherit; color: #D6223A" aria-hidden="true">01</p><h2 class="wide" style="font-size: inherit">Products and brands</h2></div>
-<p style="max-width: 680px; color: #2B2B31">I take a consumer product from idea to shelf: the formula, the packaging, the cost model, the state labeling rules and the brand around it.</p>
-<div class="g4">
-<article class="item">
-<figure class="product-art">
-<img class="product-art-copy" src="assets/meadow-maker-crowd-detail.webp" width="498" height="623" loading="lazy" alt="A crowd beneath spreading branches, a detail from my Meadow Maker pouch artwork.">
-<figcaption><img src="assets/meadow-maker-wordmark.png" width="640" height="236" loading="lazy" alt="Meadow Maker"></figcaption>
-</figure>
-<h3 class="h3">Meadow Maker</h3>
-<p class="sub">An everyday brand for gummies and pre-rolls. My packaging pairs film photography with a narrow strip of color for each flavor.</p>
-<p class="mono">In development for New York</p>
-<a href="one-product-start-to-finish.html" style="color: #D6223A; text-underline-offset: .2em">One product, start to finish</a>
-</article>
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 4 / 5"><span><span class="tag">To add</span>PABLO vape line, all flavors</span></div>
-<h3 class="h3">PABLO</h3>
-<p class="sub">A flavor-led line of vapes and gummies built around fresh-frozen flower. It started in hemp.</p>
-<p class="mono">In development for New York</p>
-</article>
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 4 / 5"><span><span class="tag">To add</span>Hash Snob stash box</span></div>
-<h3 class="h3">Hash Snob</h3>
-<p class="sub">Small-batch hash products, sold with a reusable stash box that customers keep and refill.</p>
-<p class="mono">In development for New York</p>
-</article>
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 4 / 5"><span><span class="tag">To add</span>Products made for other brands, grouped</span></div>
-<h3 class="h3">Made for other brands</h3>
-<p class="sub">Dozens of products designed and manufactured for larger brands at the hemp company I built with my partner.</p>
-<p class="mono"><span class="tag">To add</span>Client names, with permission</p>
-</article>
-</div>
-</section>
-
-<section id="factory" class="wrap" style="padding-top: 56px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 22px">
-<div class="chap"><p class="wide" style="font-size: inherit; color: #E8590C" aria-hidden="true">02</p><h2 class="wide" style="font-size: inherit">Factory and manufacturing</h2></div>
-<p style="max-width: 680px; color: #2B2B31">I plan production before anything is bought: the floor, each line, the people at each station, and what a normal day should produce.</p>
-<div class="frame mono" style="aspect-ratio: 2.39 / 1"><span><span class="tag">To render</span>Wide view of the full production floor from the 3D planner</span></div>
-<div class="g3">
-<article class="item">
-<h3 class="h3">Montgomery Layout Studio</h3>
-<p class="sub">A 2D and 3D planning tool for a real production building. It models the equipment, the staff each task needs, the output and the cost. The operators in it walk, grip and carry like real people.</p>
-</article>
-<article class="item">
-<h3 class="h3">Production line design</h3>
-<p class="sub">Filling, pre-roll, gummy and packaging lines, taken from vendor quotes to exact positions on the floor.</p>
-</article>
-<article class="item">
-<h3 class="h3">Equipment in 3D</h3>
-<p class="sub">A model of each machine, built to the maker's dimensions, so a layout can be dragged into place and tested before money is spent.</p>
-</article>
-</div>
-</section>
-
-<section id="ai" class="wrap" style="padding-top: 56px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 22px">
-<div class="chap"><p class="wide" style="font-size: inherit; color: #1F5EFF" aria-hidden="true">03</p><h2 class="wide" style="font-size: inherit">AI systems</h2></div>
-<p style="max-width: 680px; color: #2B2B31">I design AI systems that do real operating work. I build them in three layers: the data, the tools that read it, and the agents that act on it.</p>
-
-<div class="layer">
-<div class="lhead">
-<p class="mono" style="color: #1F5EFF; font-weight: 600">3.1</p>
-<h3 class="h3">The data</h3>
-<p class="sub">I start by turning a messy business into clean, linked records. Every person, company, project, place, machine and product is one defined thing, with its facts and its links to other things. Each fact is stored once and traces back to its source.</p>
-</div>
-<div class="lbody" style="display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: flex-start">
-<div style="flex: 1.3 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<div class="mono" style="border: 1.5px solid #000; border-radius: 2px">
-<p style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; padding: 10px 14px"><span style="color: #000; font-weight: 600">Machine</span><span>Example, demo data</span></p>
-<p class="kv"><span class="k">Name</span><span style="color: #000">Cartridge filler</span></p>
-<p class="kv"><span class="k">Located in</span><span style="color: #1F5EFF; text-decoration: underline">Production floor</span></p>
-<p class="kv"><span class="k">Part of</span><span style="color: #1F5EFF; text-decoration: underline">Filling line</span></p>
-<p class="kv"><span class="k">Needs</span><span style="color: #000">2 operators</span></p>
-<p class="kv"><span class="k">Source</span><span style="color: #1F5EFF; text-decoration: underline">Vendor quote, page 2</span></p>
-</div>
-<p class="mono">Blue values link to other records.</p>
-</div>
-<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<p class="mono">Kinds of thing the system knows</p>
-<div style="display: flex; flex-wrap: wrap; gap: 8px">
-<span class="chip">People</span><span class="chip">Companies</span><span class="chip">Projects</span><span class="chip">Places</span><span class="chip">Machines</span><span class="chip">Products</span><span class="chip">Documents</span><span class="chip">Tasks</span>
-</div>
-</div>
-</div>
-</div>
-
-<div class="layer">
-<div class="lhead">
-<p class="mono" style="color: #1F5EFF; font-weight: 600">3.2</p>
-<h3 class="h3">Tools built on the data</h3>
-<p class="sub">Each tool is the same set of records, seen a different way. Once the data is clean, a new tool is mostly a new view.</p>
-</div>
-<div class="lbody g2">
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 16 / 10"><span><span class="tag">To record</span>Market map</span></div>
-<h3 class="h3" style="font-size: 18px">Market map</h3>
-<p class="sub">A whole state market in one picture: who makes each product, who sells it, and where the money moves. Runs on more than 5 million rows of sales records.</p>
-</article>
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 16 / 10"><span><span class="tag">To record</span>Dependency graph</span></div>
-<h3 class="h3" style="font-size: 18px">Dependency graph</h3>
-<p class="sub">Every task, linked to what it is waiting on. Pick a name and see that person's work in the order it can be done.</p>
-</article>
-<article class="item">
-<div class="frame mono" style="aspect-ratio: 16 / 10"><span><span class="tag">To record</span>Store map</span></div>
-<h3 class="h3" style="font-size: 18px">Store map</h3>
-<p class="sub">Every retail store on a map, with what sells there. Built for planning sales visits.</p>
-</article>
-</div>
-</div>
-
-<div class="layer">
-<div class="lhead">
-<p class="mono" style="color: #1F5EFF; font-weight: 600">3.3</p>
-<h3 class="h3">How the agents work</h3>
-<p class="sub">Agents act on the data, and a person stays in charge of anything that matters.</p>
-</div>
-<div class="lbody g2">
-<article class="item">
-<h3 class="h3" style="font-size: 18px">One loop</h3>
-<p class="sub">Capture, check, record, act, verify. The result of every action goes back in as new evidence.</p>
-</article>
-<article class="item">
-<h3 class="h3" style="font-size: 18px">Permission by risk</h3>
-<p class="sub">Changes that are easy to undo go straight in. Serious ones wait for a yes.</p>
-</article>
-<article class="item">
-<h3 class="h3" style="font-size: 18px">Agents on a schedule</h3>
-<p class="sub">One writes a sales strategy every week. One checks email and the record every hour and proposes updates.</p>
-</article>
-</div>
-</div>
-
-<article style="border-top: 1px solid #C9C9CF; padding-top: 28px; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center">
-<div class="frame mono" style="flex: 1.5 1 380px; min-width: 0; aspect-ratio: 16 / 10"><span><span class="tag">To record</span>FM Command running on demo data</span></div>
-<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
-<p class="mono">All three layers in one system</p>
-<h3 class="wide" style="font-size: clamp(28px, 3.4vw, 44px)">FM Command</h3>
-<p>The operating system I built for my own businesses. It keeps one current record of everything (people, projects, equipment, money owed) and lets AI agents act on it with permission.</p>
-<a href="fm-command.html" class="btn">Read the case study</a>
-</div>
-</article>
-</section>
-
-<section id="film" class="wrap" style="padding-top: 56px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 22px">
-<div class="chap"><p class="wide" style="font-size: inherit; color: #000" aria-hidden="true">04</p><h2 class="wide" style="font-size: inherit">Photo and film</h2></div>
-<p style="max-width: 680px; color: #2B2B31">I photograph the products, the places and the people who make them. Short films about how things get built come next.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px">
-<div class="frame mono" style="grid-column: span 2; aspect-ratio: 3 / 2"><span><span class="tag">To add</span>Six of your strongest photographs, uncropped</span></div>
-<div class="frame" style="aspect-ratio: 3 / 4"></div>
-<div class="frame" style="aspect-ratio: 3 / 4"></div>
-<div class="frame" style="aspect-ratio: 3 / 4"></div>
-<div class="frame" style="aspect-ratio: 3 / 4"></div>
-<div class="frame" style="aspect-ratio: 3 / 4"></div>
-</div>
-<p class="mono">Contact sheet 01</p>
-</section>
-
-</div>
-
-<footer id="contact" class="wrap" style="padding-bottom: 56px">
-<div style="border-top: 1.5px solid #000; padding-top: 40px; display: flex; flex-direction: column; gap: 22px">
-<h2 class="wide" style="font-size: clamp(30px, 4.4vw, 60px)">Get in touch</h2>
-<p style="max-width: 640px; color: #2B2B31">I like talking with people who build physical products, factories and AI systems. Write to me.</p>
-<div class="row" style="gap: 12px">
-<p class="slot mono" style="flex: 1 1 240px"><span class="tag">To add</span>Your email address</p>
-<p class="slot mono" style="flex: 1 1 240px"><span class="tag">To add</span>LinkedIn link</p>
-<p class="slot mono" style="flex: 1 1 240px"><span class="tag">To add</span>Links to the three brand sites</p>
-</div>
-<p class="mono" style="margin-top: 28px">Alex Buckner, Brooklyn, New York</p>
-</div>
-</footer>
-
-</div>
-<script src="hero.js" defer></script>
-</body>
-</html>
+<section id="work" class="directory">
+<div>
+<h2 class="sectionname">Selected work</h2></div>
+<div><a class="indexlink" href="photographs.html"><strong>The image edit</strong><span class="tag">Photography &amp; art direction</span></a><a class="indexlink" href="one-product-start-to-finish.html"><strong>Meadow Maker</strong><span class="tag">Brand &amp; packaging</span></a><a class="indexlink" href="robotics.html"><strong>The cylinder line</strong><span class="tag">Manufacturing &amp; robotics</span></a><a class="indexlink" href="fm-command.html"><strong>FM Command</strong><span class="tag">Applied AI &amp; software</span></a><a class="indexlink" href="greenhouse.html"><strong>The greenhouse model</strong><span class="tag">Agricultural systems</span></a></div></section>
+<section class="brandFeature" id="products">
+<div>
+<p class="kicker">Brand &amp; packaging</p>
+<h2>One product,<br>start to finish.</h2>
+<p>A crowd under a tree became the face of a Meadow Maker pouch. What happens to the picture, the type and the packing job when the same product moves into a tin?</p><a class="text-link" href="one-product-start-to-finish.html">Read the packaging study</a></div><a class="proof" href="one-product-start-to-finish.html" aria-label="View the Meadow Maker packaging study"><img class="" src="assets/meadow-maker-peach-proof.webp" alt="The Peach print proof with a black-and-white crowd photograph beside the Meadow Maker wordmark and orange flavor strip." loading="lazy"></a></section></main>
+<footer class="footer frame" id="contact">
+<div>
+<p class="kicker">Get in touch</p><a class="email" href="mailto:alex.buckner@cgoperations.com">alex.buckner@cgoperations.com</a></div>
+<nav class="footlinks" aria-label="Footer"><a href="index.html#work">Selected work</a><a href="about.html">Profile</a></nav></footer></body></html>
