@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One product, start to finish | Alex Buckner</title>
+  <meta name="description" content="Alex Buckner follows a Meadow Maker gummy from the mold to the packing table, comparing a pouch and a round tin for Sweet Plum.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="One product, start to finish | Alex Buckner">
+  <meta property="og:description" content="The flavor stays the same. A choice between a pouch and a round tin changes the work of packing a Meadow Maker gummy.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/MeadowMakerAi/alex-buckner-site/45753f040a7b5e64527fb79d2df6bc451c1f8b40/assets/one-product-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alex Buckner. One product, start to finish. Meadow Maker gummies.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Geist:wght@100..900&amp;family=Geist+Mono:wght@100..900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --product: #d6223a;
+      --rule: #c9c9cf;
+      --muted: #45454d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #000; font: 17px/1.5 'Geist', system-ui, sans-serif; }
+    h1, h2, p, dl, dd, figure { margin: 0; }
+    h1, h2, .brand {
+      font-family: 'Archivo', system-ui, sans-serif;
+      font-weight: 700;
+      font-stretch: 112%;
+      letter-spacing: -.025em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #1f5eff; outline-offset: 3px; }
+    .wrap { max-width: 1328px; padding-inline: clamp(20px, 5vw, 64px); margin-inline: auto; }
+    .skip { position: absolute; left: 12px; top: -5em; background: #fff; padding: 8px; }
+    .skip:focus { top: 8px; }
+    .mast, .mast nav, .footer { display: flex; flex-wrap: wrap; align-items: center; }
+    .mast, .footer { justify-content: space-between; }
+    .mast { gap: 4px 24px; padding-block: 18px; }
+    .mast nav { gap: 2px clamp(14px, 2vw, 26px); }
+    .mast a, .footer a { display: inline-flex; min-height: 44px; align-items: center; }
+    .mast a { font-weight: 500; text-decoration: none; }
+    .mast a:hover { text-decoration: underline; }
+    .mast .brand { font-size: 19px; font-stretch: 125%; font-weight: 700; }
+    .mast .contact { padding-inline: 18px; background: #000; color: #fff; border-radius: 2px; }
+    .mono, dt, figcaption { font: 13px/1.5 'Geist Mono', ui-monospace, monospace; }
+    .hero { padding-block: clamp(32px, 5vw, 72px) clamp(32px, 4vw, 56px); }
+    .kicker { display: flex; gap: 10px; align-items: center; }
+    .kicker::before { content: ''; width: 32px; height: 3px; background: var(--product); transform-origin: left; }
+    h1 { margin-block: 20px 24px; max-width: 17ch; font-size: clamp(44px, 7.2vw, 100px); font-stretch: 125%; }
+    .intro { max-width: 55ch; font-size: clamp(20px, 2vw, 27px); line-height: 1.38; }
+    .chapter { border-top: 1.5px solid #000; padding-block: clamp(24px, 4vw, 48px); }
+    .chapter, .workbench { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: 18px clamp(32px, 6vw, 80px); }
+    h2 { max-width: 19ch; font-size: clamp(26px, 3.2vw, 40px); }
+    .copy { max-width: 65ch; }
+    .copy > * + * { margin-top: 14px; }
+    .workbench { border-top: 1.5px solid #000; padding-block: clamp(24px, 4vw, 48px); align-items: start; }
+    .workbench figure { border: 1.5px solid #000; border-radius: 2px; }
+    figcaption { padding: 10px 16px; border-bottom: 1px solid var(--rule); }
+    .comparison { margin: 0; padding: 0 16px; }
+    .comparison div { padding-block: 12px; }
+    .comparison div + div { border-top: 1px solid var(--rule); }
+    dt { color: var(--muted); }
+    dd { margin-top: 3px; font-size: 17px; }
+    .next h2 { margin-bottom: 16px; }
+    .asset-note { display: flex; gap: 9px; align-items: baseline; color: var(--muted); }
+    .tag { flex: none; font: 600 13px/1.5 'Geist', system-ui, sans-serif; background: #ffd60a; color: #000; padding: 1px 6px; }
+    .footer { border-top: 1.5px solid #000; padding-block: 18px 40px; gap: 4px 24px; }
+    .footer a { font-weight: 500; }
+    @media (max-width: 700px) {
+      .chapter, .workbench { grid-template-columns: 1fr; }
+      .mast nav { font-size: 16px; }
+      .mast .contact { padding-inline: 10px; }
+      .workbench { gap: 28px; }
+      h2 { max-width: none; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .kicker::before { animation: mark .5s cubic-bezier(.23, 1, .32, 1) both; }
+      @keyframes mark { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      .contact { transition: transform .12s ease-out; }
+      .contact:active { transform: scale(.97); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#story">Skip to case study</a>
+  <header class="mast wrap">
+    <a class="brand" href="index.html">Alex Buckner</a>
+    <nav aria-label="Main">
+      <a href="index.html#work">Work</a>
+      <a href="fm-command.html">FM Command</a>
+      <a href="about.html">About</a>
+      <a class="contact" href="index.html#contact">Get in touch</a>
+    </nav>
+  </header>
+  <main id="story" class="wrap" tabindex="-1">
+    <article>
+      <header class="hero">
+        <p class="kicker mono">Products and brands</p>
+        <h1>One product, start to finish</h1>
+        <p class="intro">I’m developing Sweet Plum gummies for Meadow Maker in New York. The pouch and the round tin carry the same photograph. To choose between them, I need to know what each one costs to fill.</p>
+      </header>
+      <section class="chapter">
+        <h2>The flavor and the pack</h2>
+        <div class="copy">
+          <p>In the Sweet Plum studies, a black-and-white photograph of a crowd sits beside a muted plum strip. The photograph gives the pack its character. The strip gives someone looking across a shelf a place to find the flavor.</p>
+          <p>On the pouch, I have to leave room for the zipper and tear notch. On the tin, the picture and flavor name have to read on a round lid. I also need a place for the lot information that changes with each batch.</p>
+        </div>
+      </section>
+      <section class="chapter">
+        <h2>Making room for the cure</h2>
+        <div class="copy">
+          <p>I’m planning the line around a pectin base. A depositor fills silicone molds. The gummies then need time on racks before they can be packed.</p>
+          <p>In the floor model, yesterday’s batch still takes up space when today’s comes off the line. A faster depositor can fill another tray. It can’t free up a rack. That’s why I plan the curing room alongside the machines.</p>
+        </div>
+      </section>
+      <section class="chapter">
+        <h2>The cost of a finished pack</h2>
+        <div class="copy">
+          <p>Both formats need an accurate count. With a pouch, I can plan a feed from the counter into the open bag. A tin needs a lid and another handling step if it goes inside an outer pouch.</p>
+          <p>In my cost model, I work back from the pre-tax shelf price through the retailer’s margin, distribution and the brand’s share. What’s left has to cover the gummy, the package and the time it takes to finish it. A quote for an empty tin only gives me part of that answer.</p>
+        </div>
+      </section>
+      <section class="workbench next" aria-labelledby="trial-title">
+        <div class="copy">
+          <h2 id="trial-title">What I’d test next</h2>
+          <p>The work so far is a set of packaging studies and a production plan. I’d run both formats at the same packing table, then open the samples and check the count and condition of the gummies.</p>
+          <p>I’d keep the timed result alongside the supplier’s quote in <a href="fm-command.html">FM Command</a>. Back at the shelf, I’d photograph each pack from a shopper’s distance to see whether I can still read “Sweet Plum.”</p>
+          <p class="asset-note mono"><span class="tag">To add</span><span>A cleared photograph of the physical pack and the result of the first packing trial.</span></p>
+        </div>
+        <figure>
+          <figcaption>Proposed packing trial</figcaption>
+          <dl class="comparison">
+            <div><dt>Hold constant</dt><dd>Same batch and piece count</dd></div>
+            <div><dt>Compare</dt><dd>Direct fill into a pouch and a lidded tin in an outer pouch</dd></div>
+            <div><dt>Record</dt><dd>Time per finished pack, miscounts and damaged pieces</dd></div>
+          </dl>
+        </figure>
+      </section>
+    </article>
+    <footer class="footer">
+      <a href="index.html#products">All products and brands</a>
+      <a href="fm-command.html">FM Command case study</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,6 +1,7 @@
 # Working on this site (for Claude, ChatGPT and Codex)
 
 This repository is worked on by more than one AI. These rules keep the work from colliding.
+The repository is the main copy of the site. Use the canvas to sketch ideas, and make site edits here.
 
 ## Before you start
 
@@ -40,6 +41,7 @@ This repository is worked on by more than one AI. These rules keep the work from
 | `index.html` | Home |
 | `about.html` | About and resume |
 | `fm-command.html` | FM Command case study |
+| `one-product-start-to-finish.html` | One product, start to finish case study |
 | `hero.js` | The Home opening sequence |
 | `DESIGN.md` | Design rules |
 | `AGENTS.md` | This file |
