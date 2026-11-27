@@ -57,6 +57,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 @keyframes open{from{clip-path:inset(49% 0 49% 0)}}
 }
 </style>
+<link rel="stylesheet" href="process.css">
+<meta property="og:image" content="https://raw.githubusercontent.com/MeadowMakerAi/alex-buckner-site/5cb89fbb70b354f0ed1d31b11ddab73fe7e5b4e9/assets/meadow-maker-peach-proof.webp">
 </head>
 <body>
 <div style="font-family: 'Geist', system-ui, sans-serif; font-size: 17px; line-height: 1.5; color: #000; background: #fff">
@@ -71,33 +73,25 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 </nav>
 </header>
 
-<section class="wrap" style="padding-top: clamp(28px, 5vw, 72px); padding-bottom: 40px; display: flex; flex-direction: column; gap: 32px">
-<h1 class="wide" style="font-size: clamp(34px, 4.7vw, 66px)">I build <a href="#products" class="u" data-pick="0" style="background-image: linear-gradient(#D6223A, #D6223A); background-size: 100% .2em">products</a>, the <a href="#factory" class="u" data-pick="1" style="background-image: linear-gradient(#E8590C, #E8590C); background-size: 100% .11em; animation-delay: .12s">factory</a> that makes them, the <a href="#ai" class="u" data-pick="2" style="background-image: linear-gradient(#1F5EFF, #1F5EFF); background-size: 100% .11em; animation-delay: .24s">AI</a> that runs the business, and the <a href="#film" class="u" data-pick="3" style="background-image: linear-gradient(#000, #000); background-size: 100% .11em; animation-delay: .36s">film</a> that tells the story.</h1>
-<div style="display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="font-size: clamp(18px, 1.5vw, 21px); max-width: 600px; color: #2B2B31">Founder and operator in Brooklyn, New York. I work in regulated consumer products (cannabis and hemp), where the product, the paperwork and the production all have to be right.</p>
-<div class="row" style="gap: 12px">
-<a href="#work" class="btn">See the work</a>
-<a href="about.html" class="btn" style="background: #fff; color: #000">Read my story</a>
-</div>
-</div>
-<div style="flex: 1.4 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
-<div class="ap" style="position: relative; aspect-ratio: 16 / 10; border: 1.5px solid #000; border-radius: 2px; overflow: hidden; background: #F4F4F6">
-<div class="shot pouch-proof" data-shot="0" style="opacity: 1"><img src="assets/meadow-maker-peach-proof.webp" width="850" height="403" fetchpriority="high" alt="Meadow Maker Peach pouch artwork, with a black-and-white crowd photograph and an orange flavor strip."></div>
-<div class="shot" data-shot="1" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #E8590C">02</p><p class="mono"><span class="tag">To render</span>Slow camera move through the 3D factory model</p></div>
-<div class="shot" data-shot="2" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #1F5EFF">03</p><p class="mono"><span class="tag">To record</span>FM Command screen capture, demo data</p></div>
-<div class="shot" data-shot="3" style="opacity: 0"><p class="wide" style="font-size: clamp(44px, 6vw, 88px); color: #000">04</p><p class="mono"><span class="tag">To shoot</span>Your hands on a lens ring, close</p></div>
-</div>
-<div class="mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px"><span data-cap-num>01 / 04</span><span data-cap-name style="color: #000; font-weight: 600">Products</span><span>4 second loop</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 22px">
-<button type="button" class="tab" data-pick="0" aria-pressed="true" style="border-bottom-color: #000"><span class="key" style="background: #D6223A" aria-hidden="true"></span>Products</button>
-<button type="button" class="tab" data-pick="1" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #E8590C" aria-hidden="true"></span>Factory</button>
-<button type="button" class="tab" data-pick="2" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #1F5EFF" aria-hidden="true"></span>AI</button>
-<button type="button" class="tab" data-pick="3" aria-pressed="false" style="border-bottom-color: transparent"><span class="key" style="background: #000" aria-hidden="true"></span>Film</button>
-</div>
-</div>
-</div>
+<section id="studio" class="wrap founder-film" aria-labelledby="film-title">
+  <header class="film-intro">
+    <div><p class="studio-key mono">Alex Buckner / A film in development</p><h1 class="wide" id="film-title">From the first frame.</h1></div>
+    <p class="film-lead">I want to follow a photograph from my Mamiya 7 onto a folded carton, and a plum from the orchard into the gummy that goes inside.</p>
+  </header>
+  <figure class="film-frame">
+    <!-- film-screen-start -->
+    <img class="original-proof" src="assets/meadow-maker-peach-proof.webp" width="850" height="403" alt="Original Peach pouch proof featuring the crowd photograph and Meadow Maker wordmark.">
+    <figcaption><strong>Original Meadow Maker artwork</strong><span>The proposed film carries this photograph onto a hinged paperboard carton.</span></figcaption>
+    <!-- film-screen-end -->
+  </figure>
+  <div class="film-links"><details id="shot-list"><summary>Read the shooting sequence</summary><ol class="shot-list"><li><span class="shot-time mono">0:00</span><div><strong>At the workbench</strong><p>Alex steps into the light. The camera is already on the table. Hold until his hand enters the frame.</p></div></li><li><span class="shot-time mono">0:03</span><div><strong>The pickup</strong><p>Stay close on the thumb, strap and weight of the Mamiya 7 as it leaves the table.</p></div></li><li><span class="shot-time mono">0:05</span><div><strong>The exposure</strong><p>Over Alex’s shoulder, settle on a gesture in the crowd. Cut on the shutter.</p></div></li><li><span class="shot-time mono">0:08</span><div><strong>Develop</strong><p>Match the rotation of the film advance to the turn of the closed developing tank.</p></div></li><li><span class="shot-time mono">0:11</span><div><strong>Read the negative</strong><p>Lift the dry strip to the light. Let the loupe stop on one frame.</p></div></li><li><span class="shot-time mono">0:13</span><div><strong>Scan the frame</strong><p>Keep the same orientation as the negative settles into the scanner holder.</p></div></li><li><span class="shot-time mono">0:15</span><div><strong>The frame</strong><p>The Meadow Maker crowd artwork fills the screen. Hold long enough to choose a face.</p></div></li><li><span class="shot-time mono">0:18</span><div><strong>Choose the stock</strong><p>Rake light across two boards. Alex bends the toothier sheet and feels it spring back.</p></div></li><li><span class="shot-time mono">0:21</span><div><strong>Make the proof</strong><p>Move the crop and flavor band into register on the flat sheet. Keep the wordmark clear of the score.</p></div></li><li><span class="shot-time mono">0:25</span><div><strong>Cut, crease and glue</strong><p>After printing, reveal the cut edges, score channels and six glue locations in the structural study.</p></div></li><li><span class="shot-time mono">0:28</span><div><strong>Open the carton</strong><p>Match-cut from the flat conversion proof to the pre-glued carton. Lift the tray walls and leave the hinged lid open.</p></div></li><li><span class="shot-time mono">0:32</span><div><strong>Pick the plum</strong><p>Stay with the stem as the fruit twists free of the branch.</p></div></li><li><span class="shot-time mono">0:34</span><div><strong>Choose the fruit</strong><p>At the farm, turn a ripe plum in the hand. Match the skin to the ink on the carton.</p></div></li><li><span class="shot-time mono">0:36</span><div><strong>Pit the plums</strong><p>Cut at the stone and turn the halves apart. Carry that motion into the pan.</p></div></li><li><span class="shot-time mono">0:38</span><div><strong>Add the honey</strong><p>Hold on the ribbon of honey until it disappears between the pieces of fruit.</p></div></li><li><span class="shot-time mono">0:41</span><div><strong>Test the jam</strong><p>Draw a spoon through a cooled sample of plum-honey jam. Follow the same flavor into a gummy-base trial.</p></div></li><li><span class="shot-time mono">0:44</span><div><strong>From jam to gummy base</strong><p>Fold the trial jam into the gummy base; cut on the first smooth ribbon.</p></div></li><li><span class="shot-time mono">0:47</span><div><strong>Deposit</strong><p>Follow one stream into one mold cavity. Cut from that single piece to the repeatable row.</p></div></li><li><span class="shot-time mono">0:50</span><div><strong>Release the pieces</strong><p>Peel the flexible mold away. Watch the piece hold its corners.</p></div></li><li><span class="shot-time mono">0:52</span><div><strong>Cure</strong><p>Release the set pieces onto trays. Hold low on the rows as the rack slides into place.</p></div></li><li><span class="shot-time mono">0:55</span><div><strong>Check the run</strong><p>Weigh a sample, inspect its shape and set aside an imperfect piece before packing.</p></div></li><li><span class="shot-time mono">0:58</span><div><strong>Check the bite</strong><p>Pull a piece apart in the window light to examine the center.</p></div></li><li><span class="shot-time mono">1:00</span><div><strong>Taste</strong><p>Stay with the pause after Alex tastes a separate sample. Give his reaction time.</p></div></li><li><span class="shot-time mono">1:03</span><div><strong>Pack</strong><p>Lower a sealed inner pack from the accepted lot into the open carton.</p></div></li><li><span class="shot-time mono">1:06</span><div><strong>The finished pack</strong><p>Bring the lid down. Hold on the original photograph, now on the box. Let the latch be the last sound.</p></div></li></ol></details>
+    <a href="one-product-start-to-finish.html">Read the product case study</a>
+  </div>
 </section>
+<div class="wrap work-strip">
+  <p>I’m a founder and operator in Brooklyn. My work spans regulated consumer products, including cannabis and hemp.</p>
+  <nav aria-label="Explore my work"><a href="#products">Products</a><a href="#factory">Factory</a><a href="#ai">AI systems</a><a href="#film">Photo and film</a></nav>
+</div>
 
 <section class="wrap" style="padding-bottom: 56px">
 <div class="row" style="gap: 20px 32px; border-top: 1.5px solid #000; padding-top: 18px">
@@ -291,6 +285,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #1F5EFF;outline-offset:3p
 </footer>
 
 </div>
-<script src="hero.js" defer></script>
+
 </body>
 </html>

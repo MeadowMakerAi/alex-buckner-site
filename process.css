@@ -1,0 +1,17 @@
+.founder-film{padding-top:clamp(22px,4vw,54px);padding-bottom:clamp(32px,5vw,76px)}
+.film-intro{display:grid;grid-template-columns:1.22fr .78fr;align-items:end;gap:clamp(24px,6vw,80px);margin-bottom:24px}
+.studio-key{display:flex;align-items:center;gap:10px}.studio-key:before{content:"";width:28px;height:3px;background:#d6223a}
+.film-intro h1{font-size:clamp(44px,5.2vw,76px);line-height:1.02;letter-spacing:-.045em;margin-top:15px}
+.film-lead{font-size:clamp(17px,1.65vw,22px);max-width:42ch;line-height:1.43}
+.film-frame{border:1.5px solid #111;border-radius:2px;overflow:hidden;margin:0}
+.film-frame video,.film-frame img{display:block;width:100%;height:auto}
+.film-frame video{aspect-ratio:16/9;background:#111;max-height:68svh}
+.film-frame img{max-height:54vh;object-fit:contain;background:#f4f4f6}
+.film-frame figcaption{border-top:1px solid #c9c9cf;display:flex;gap:3px 22px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;padding:11px 15px}
+.film-frame figcaption strong{font-size:16px}.film-frame figcaption span,.shot-time{font:13px/1.5 'Geist Mono',monospace;color:#45454d}
+.film-links{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:2px 22px;padding-top:8px}
+.film-links details{flex:1 1 320px}.film-links summary,.film-links>a,.work-strip a{cursor:pointer;padding-block:10px;min-height:44px;box-sizing:border-box}.film-links>a,.work-strip a{text-underline-offset:4px}
+.shot-list{list-style:none;padding:0;margin:8px 0;max-width:70ch}.shot-list li{display:grid;grid-template-columns:44px 1fr;gap:10px;padding:13px 0;border-top:1px solid #c9c9cf}.shot-list p{font-size:16px;color:#45454d;margin-top:3px}
+.work-strip{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 25px;padding-bottom:24px}.work-strip p{max-width:59ch}.work-strip nav{display:flex;gap:6px 18px;flex-wrap:wrap}.work-strip a{font-size:15px}
+@media(max-width:760px){.film-intro{grid-template-columns:1fr;gap:12px;margin-bottom:17px}.film-intro h1{margin-top:10px}.film-frame figcaption{padding:10px}.film-links details{flex-basis:180px}}
+@media(max-width:520px){header.wrap nav[aria-label="Main"]{gap:2px 13px!important}header.wrap nav .btn{min-height:42px;padding:0 10px;border-radius:2px}header.wrap{padding-block:8px!important}}
