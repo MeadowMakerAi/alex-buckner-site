@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One product, start to finish | Alex Buckner</title>
+  <meta name="description" content="Alex Buckner follows a Meadow Maker gummy from the mold to the packing table, comparing a pouch and a round tin for Sweet Plum.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="One product, start to finish | Alex Buckner">
+  <meta property="og:description" content="The flavor stays the same. A choice between a pouch and a round tin changes the work of packing a Meadow Maker gummy.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/MeadowMakerAi/alex-buckner-site/3aca4d2e892ce9edd710e8702223a6936a83bcd7/assets/one-product-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alex Buckner. One product, start to finish. Meadow Maker gummies.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Geist:wght@100..900&amp;family=Geist+Mono:wght@100..900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --product: #d6223a;
+      --rule: #c9c9cf;
+      --muted: #45454d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #000; font: 17px/1.5 'Geist', system-ui, sans-serif; }
+    h1, h2, p, dl, dd, figure { margin: 0; }
+    h1, h2, .brand {
+      font-family: 'Archivo', system-ui, sans-serif;
+      font-weight: 700;
+      font-stretch: 112%;
+      letter-spacing: -.025em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #1f5eff; outline-offset: 3px; }
+    .wrap { max-width: 1328px; padding-inline: clamp(20px, 5vw, 64px); margin-inline: auto; }
+    .skip { position: absolute; left: 12px; top: -5em; background: #fff; padding: 8px; }
+    .skip:focus { top: 8px; }
+    .mast, .mast nav, .footer { display: flex; flex-wrap: wrap; align-items: center; }
+    .mast, .footer { justify-content: space-between; }
+    .mast { gap: 4px 24px; padding-block: 18px; }
+    .mast nav { gap: 2px clamp(14px, 2vw, 26px); }
+    .mast a, .footer a { display: inline-flex; min-height: 44px; align-items: center; }
+    .mast a { font-weight: 500; text-decoration: none; }
+    .mast a:hover { text-decoration: underline; }
+    .mast .brand { font-size: 19px; font-stretch: 125%; font-weight: 700; }
+    .mast .contact { padding-inline: 18px; background: #000; color: #fff; border-radius: 2px; }
+    .mono, dt, figcaption { font: 13px/1.5 'Geist Mono', ui-monospace, monospace; }
+    .hero { padding-block: clamp(32px, 5vw, 72px) clamp(32px, 4vw, 56px); }
+    .kicker { display: flex; gap: 10px; align-items: center; }
+    .kicker::before { content: ''; width: 32px; height: 3px; background: var(--product); transform-origin: left; }
+    h1 { margin-block: 20px 24px; max-width: 17ch; font-size: clamp(44px, 7.2vw, 100px); font-stretch: 125%; }
+    .intro { max-width: 55ch; font-size: clamp(20px, 2vw, 27px); line-height: 1.38; }
+    .chapter { border-top: 1.5px solid #000; padding-block: clamp(24px, 4vw, 48px); }
+    .chapter, .workbench { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: 18px clamp(32px, 6vw, 80px); }
+    h2 { max-width: 19ch; font-size: clamp(26px, 3.2vw, 40px); }
+    .copy { max-width: 65ch; }
+    .copy > * + * { margin-top: 14px; }
+    .workbench { border-top: 1.5px solid #000; padding-block: clamp(24px, 4vw, 48px); align-items: start; }
+    .pack-switch { margin: 0; min-width: 0; padding: 0; border: 0; }
+    .pack-switch legend { padding: 0; margin: 0 0 5px; }
+    .pack-switch input { margin: 0 3px 0 0; accent-color: #000; width: 16px; height: 16px; vertical-align: middle; }
+    .pack-switch label { display: inline-flex; align-items: center; min-height: 44px; font: 600 17px/1.5 'Geist', system-ui, sans-serif; margin-right: 18px; cursor: pointer; }
+    .pack-switch input:focus-visible + label { outline: 2px solid #1f5eff; outline-offset: 3px; }
+    .pack-sheet { margin-top: 8px; border: 1.5px solid #000; border-radius: 2px; }
+    .pack-sheet dl { margin: 0; }
+    .pack-sheet dl > div { display: grid; grid-template-columns: 6ch minmax(0, 1fr); gap: 1rem; padding: 12px 16px; align-items: baseline; }
+    .pack-sheet dl > div + div { border-top: 1px solid var(--rule); }
+    .pack-sheet dt { font: 13px/1.5 'Geist Mono', ui-monospace, monospace; }
+    .pack-sheet dd { margin: 0; }
+    #format-pouch:checked ~ .tin-sheet, #format-tin:checked ~ .pouch-sheet { display: none; }
+    .workbench figure { border: 1.5px solid #000; border-radius: 2px; }
+    figcaption { padding: 10px 16px; border-bottom: 1px solid var(--rule); }
+    .comparison { margin: 0; padding: 0 16px; }
+    .comparison div { padding-block: 12px; }
+    .comparison div + div { border-top: 1px solid var(--rule); }
+    dt { color: var(--muted); }
+    dd { margin-top: 3px; font-size: 17px; }
+    .next h2 { margin-bottom: 16px; }
+    .asset-note { display: flex; gap: 9px; align-items: baseline; color: var(--muted); }
+    .tag { flex: none; font: 600 13px/1.5 'Geist', system-ui, sans-serif; background: #ffd60a; color: #000; padding: 1px 6px; }
+    .footer { border-top: 1.5px solid #000; padding-block: 18px 40px; gap: 4px 24px; }
+    .footer a { font-weight: 500; }
+    @media (max-width: 700px) {
+      .chapter, .workbench { grid-template-columns: 1fr; }
+      .mast nav { column-gap: 8px; font-size: 16px; }
+      .mast .contact { padding-inline: 10px; }
+      .workbench { gap: 28px; }
+      h2 { max-width: none; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .kicker::before { animation: mark .5s cubic-bezier(.23, 1, .32, 1) both; }
+      @keyframes mark { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      .contact { transition: transform .12s ease-out; }
+      .contact:active { transform: scale(.97); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#story">Skip to case study</a>
+  <header class="mast wrap">
+    <a class="brand" href="index.html">Alex Buckner</a>
+    <nav aria-label="Main">
+      <a href="index.html#work">Work</a>
+      <a href="fm-command.html">FM Command</a>
+      <a href="about.html">About</a>
+      <a class="contact" href="index.html#contact">Get in touch</a>
+    </nav>
+  </header>
+  <main id="story" class="wrap" tabindex="-1">
+    <article>
+      <header class="hero">
+        <p class="kicker mono">Products and brands</p>
+        <h1>One product, start to finish</h1>
+        <p class="intro">I’m developing Sweet Plum gummies for Meadow Maker in New York. The pouch and the round tin carry the same photograph. I want to know what fitting a lid adds to the cost of a pack, and whether the photograph still works when I crop it to a circle.</p>
+      </header>
+      <section class="chapter">
+        <h2>The flavor and the pack</h2>
+        <div class="copy">
+          <p>Sweet Plum is one flavor in Meadow Maker’s gummy line. In the packaging studies, a black-and-white photograph of a crowd under a tree sits beside a narrow plum strip. I keep the flavor name in that strip so you know where to look when the photograph changes.</p>
+          <p>The pouch gives me a flat rectangle to work with. On the tin I have to crop the same photograph to a circle and keep the flavor name clear of the rim. I still need space for the label information that changes with each batch.</p>
+        </div>
+      </section>
+      <section class="chapter">
+        <h2>From the mold to the packing table</h2>
+        <div class="copy">
+          <p>I plan the gummy line around a pectin base. The depositor fills silicone molds. Once the pieces have set, they come out of the molds and go onto trays to cure. The molds can go back for cleaning. The trays are still occupied when the next batch arrives.</p>
+          <p>I used the floor model to follow a worker carrying a load. In one proposed layout, the cooker blocked the route. That layout failed the simulation. I could rule it out before buying or moving a machine.</p>
+        </div>
+      </section>
+      <section class="chapter">
+        <h2>What changes at the packing table</h2>
+        <div class="copy">
+          <p>The gummy and the target count stay the same. The container changes what the operator handles and what can go wrong. These are the two routes I’d compare in a packing trial.</p>
+          <fieldset class="pack-switch">
+            <legend class="mono">Compare packing formats</legend>
+            <input type="radio" name="pack-format" id="format-pouch" checked>
+            <label for="format-pouch">Pouch</label>
+            <input type="radio" name="pack-format" id="format-tin">
+            <label for="format-tin">Round tin</label>
+            <div class="pack-sheet pouch-sheet" role="group" aria-label="Pouch packing plan">
+              <dl>
+                <div><dt>Fill</dt><dd>Feed the counted gummies into the open pouch.</dd></div>
+                <div><dt>Close</dt><dd>Keep the seal area clear and seal the pouch.</dd></div>
+                <div><dt>Check</dt><dd>Inspect the seal. Open a sample and recount the pieces.</dd></div>
+              </dl>
+            </div>
+            <div class="pack-sheet tin-sheet" role="group" aria-label="Round tin packing plan">
+              <dl>
+                <div><dt>Fill</dt><dd>Count the gummies into the base of the tin.</dd></div>
+                <div><dt>Close</dt><dd>Fit the lid. If the tin needs an outer pouch, time that step separately.</dd></div>
+                <div><dt>Check</dt><dd>Check the lid fit. Open a sample and look for pieces caught at the rim.</dd></div>
+              </dl>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+      <section class="chapter">
+        <h2>The cost of a finished pack</h2>
+        <div class="copy">
+          <p>A quote for an empty tin gives me one cost. To decide whether it works, I also need the cost of the pieces inside, the time to fill and close it, and how many packs need rework.</p>
+          <p>I work back from the shelf price through the retailer’s margin and distribution. That tells me what the business can spend on each pack. In <a href="fm-command.html">FM Command</a>, I keep the depositor and tin-filling quotes with the gummy project so I can trace those assumptions to their sources.</p>
+        </div>
+      </section>
+      <section class="workbench next" aria-labelledby="trial-title">
+        <div class="copy">
+          <h2 id="trial-title">The first packing trial</h2>
+          <p>So far I have packaging studies and a production plan. I’d take samples from the same cured batch, run both formats at the same table, and open the finished packs. I want to see which one holds up after filling and handling.</p>
+          <p>Then I’d step back to shelf distance and photograph both packs side by side. Can I still read “Sweet Plum” on the tin?</p>
+          <p class="asset-note mono"><span class="tag">To add</span><span>My photograph of the physical packs and the result of the packing trial.</span></p>
+        </div>
+        <figure>
+          <figcaption>Proposed trial record</figcaption>
+          <dl class="comparison">
+            <div><dt>Hold constant</dt><dd>Batch, target piece count and packing table</dd></div>
+            <div><dt>Record</dt><dd>Time per finished pack, miscounts, damaged pieces and rework</dd></div>
+            <div><dt>Use the result</dt><dd>Compare cost per pack that passes inspection. Check the flavor name at shelf distance.</dd></div>
+          </dl>
+        </figure>
+      </section>
+    </article>
+    <footer class="footer">
+      <a href="index.html#products">All products and brands</a>
+      <a href="fm-command.html">FM Command case study</a>
+    </footer>
+  </main>
+</body>
+</html>
